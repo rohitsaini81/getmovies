@@ -1,1 +1,6 @@
-delete my project
+{
+  "version": 2,
+  "name": "book-api",
+  "builds": [{ "src": "server.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "server.js" }]
+}
